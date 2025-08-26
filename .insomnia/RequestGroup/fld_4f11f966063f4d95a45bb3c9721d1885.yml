@@ -1,0 +1,10 @@
+_id: fld_4f11f966063f4d95a45bb3c9721d1885
+type: RequestGroup
+parentId: wrk_85a27a7c8fca4079b19b8ef751b655b2
+modified: 1756228311162
+created: 1694021186173
+name: Endpoints Dispositivo
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1691777131255.5

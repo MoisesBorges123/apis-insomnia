@@ -1,0 +1,32 @@
+_id: req_d019e61e447547eeb9ad8a0aed93876e
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756238144107
+created: 1700173565071
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}]"
+name: Get QRCode
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"qrcodes"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692913274072.2065
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

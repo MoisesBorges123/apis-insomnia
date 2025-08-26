@@ -1,0 +1,32 @@
+_id: req_f8f5922a610d4586ba7ef9f0930844dd
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236182815
+created: 1707435510573
+url: "{{ _.ip }}/destroy_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: delete Grupos Usuários
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"user_groups"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692907879762.1343
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

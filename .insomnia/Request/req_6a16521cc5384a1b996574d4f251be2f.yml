@@ -1,0 +1,35 @@
+_id: req_6a16521cc5384a1b996574d4f251be2f
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230430772
+created: 1694021186187
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Set Actions
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"actions",
+    	"values":[
+    		""
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692519296783
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

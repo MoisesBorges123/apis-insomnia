@@ -1,0 +1,31 @@
+_id: req_1904d1470bc240cfb9baaed9e7536123
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756231096968
+created: 1694021186224
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get access_rule_time_zones
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"access_rule_time_zones"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_aed2a0f6f17745958fd23ccade9d5a9a
+authentication: {}
+metaSortKey: -1692905375261.0293
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,39 @@
+_id: req_f83fbbab6036457e88502280084f7d5b
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230410086
+created: 1694021186202
+url: "{{ _.ip }}/set_system_network.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: set Configurações de Rede
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+            
+    	"ip": "192.168.20.50",
+            "netmask": "255.255.255.0",
+            "gateway": "192.168.20.1",
+            "custom_hostname_enabled": true,
+            "device_hostname": "ControlID",
+            "eb_server_port": 80
+    	
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692223380344.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,46 @@
+_id: req_9ee16a28f4c04898aa8cd5ab386e1a8b
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236201248
+created: 1695946309675
+url: "{{ _.ip }}/create_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Set Grupos Usuários
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"user_groups",
+    	"fields":["group_id","user_id"],
+    	"values":[
+    					
+    		
+    				
+    		{
+    			"user_id": 10606,			
+    			"group_id": 1
+    		}
+    		
+
+    		
+    ]
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692908072416.0654
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

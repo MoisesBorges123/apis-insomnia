@@ -1,0 +1,33 @@
+_id: req_c21e6724d40c49c999bc48519cc8cdd1
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756233956911
+created: 1694561292088
+url: "{{ _.ip }}/modify_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: UPDATE Access_Rules
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"access_rules",
+    	"values":{"type":1},
+    	"where":{"access_rules":{"id":3}}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_aed2a0f6f17745958fd23ccade9d5a9a
+authentication: {}
+metaSortKey: -1692905760568.8916
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

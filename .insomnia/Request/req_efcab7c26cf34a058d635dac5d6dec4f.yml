@@ -1,0 +1,48 @@
+_id: req_efcab7c26cf34a058d635dac5d6dec4f
+type: Request
+parentId: fld_a934b6ecb6184c60b259889afbe4befd
+modified: 1756228347532
+created: 1738599606175
+url: http://crm.lndo.site/api/new_user_identified.fcgi
+name: Teste acesso Catraca dev
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"block_read_data":null,
+    	"block_read_error":"0",	
+    	"card_value":"0",
+    	"confidence":"1000",	
+    	"device_id":"4408801109387525",
+    	"duress":"0",
+    	"event":"8",
+    	"face_mask":"0",
+    	"identifier_id":"1717658368",
+    	"password":null,
+    	"pin_value":null,
+    	"portal_id":"1",
+    	"qrcode_value":null,
+    	"time":"1695070476",
+    	"user_has_image":"1",
+    	"user_id":"31142111865",
+    	"user_name":"GABRIELLA SANTOS RIBEIRO",
+    	"uuid":"13461",
+    	"session":null
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1756228333434
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

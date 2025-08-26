@@ -1,0 +1,30 @@
+_id: req_9149b6b96c064c2bb0b9e8c49308905a
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1694021186191
+created: 1694021186191
+url: 192.168.20.41/load_objects.fcgi?session=9Fp44r1xWFyk51O9irdUdz4H
+name: Get Sec_Box
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"sec_boxs"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692815213221.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_5864c5d5ff714527a0c0c0a7c4bdcc19
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230943598
+created: 1694021186209
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Charge Logs
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"change_logs"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692889192330.8125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

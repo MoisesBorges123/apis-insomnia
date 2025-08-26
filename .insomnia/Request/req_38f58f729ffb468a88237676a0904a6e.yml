@@ -1,0 +1,32 @@
+_id: req_38f58f729ffb468a88237676a0904a6e
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236276510
+created: 1694818532338
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Online Client
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"online_client"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692910769571.1016
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,29 @@
+_id: req_befa98b0fb8a4b18ac74df731b54d0ba
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230257629
+created: 1694021186178
+url: "{{ _.ip }}/user_set_image.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}&user_id=362&timestamp=1724997578"
+name: Enviar Imagem
+description: ""
+method: POST
+body:
+  mimeType: application/octet-stream
+  fileName: ""
+parameters: []
+headers:
+  - id: pair_a90dcfe000504398baf8a46717fff8ea
+    name: Content-Type
+    value: image/png
+    description: ""
+authentication: {}
+metaSortKey: -1691862810156
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

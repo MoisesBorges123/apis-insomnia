@@ -1,0 +1,25 @@
+_id: req_f4cc2d02329944dba0d34015cbcda734
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756238404418
+created: 1695064016230
+url: "{{ _.ip }}/session_is_valid.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: STATUS DISPOSITIVO
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1695064016230
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

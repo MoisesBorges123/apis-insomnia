@@ -1,0 +1,16 @@
+_id: env_7246b2b8efced369bb03d31db3ce1e9f633a58f6
+type: Environment
+parentId: wrk_85a27a7c8fca4079b19b8ef751b655b2
+modified: 1756238573202
+created: 1756228043578
+name: Base Environment
+data:
+  ip: http://192.168.20.33
+  server_test: http://crm.lndo.site
+dataPropertyOrder:
+  "&":
+    - ip
+    - server_test
+color: null
+isPrivate: false
+metaSortKey: 1756228043578

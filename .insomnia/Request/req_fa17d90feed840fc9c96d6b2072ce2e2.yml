@@ -1,0 +1,49 @@
+_id: req_fa17d90feed840fc9c96d6b2072ce2e2
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756235002841
+created: 1697226777222
+url: "{{ _.ip }}/logo.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Logo
+description: |-
+  Formas de Get em objetos
+
+  Com filtros
+
+  {
+  	"object":"users",
+  	"where":{
+  		"users":{"id":2}
+  	}
+  }
+
+  Sem filtros
+
+  {
+  	"object":"users",	
+  }
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f8f36a84546f42d39d96aaa2305ac589
+    disabled: false
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+    id: pair_9563d952100e422ebe86355518c60401
+    disabled: true
+authentication: {}
+metaSortKey: -1692907545627.9727
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

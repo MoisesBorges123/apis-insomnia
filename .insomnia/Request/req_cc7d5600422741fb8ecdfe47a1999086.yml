@@ -1,0 +1,55 @@
+_id: req_cc7d5600422741fb8ecdfe47a1999086
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236072888
+created: 1694732292911
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Template
+description: |-
+  Formas de Get em objetos
+
+  Com filtros
+
+  {
+  	"object":"users",
+  	"where":{
+  		"users":{"id":2}
+  	}
+  }
+
+  Sem filtros
+
+  {
+  	"object":"users",	
+  }
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"templates",
+    	"where":{
+    		"templates":{
+    			"user_id":1
+    		}
+    	}
+    	
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692907638944.7202
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

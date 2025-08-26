@@ -1,0 +1,47 @@
+_id: req_a4eab1654e09487186b9fc7b1b0c44a8
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756231023449
+created: 1694021186228
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Access Logs
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    
+
+    {
+    	"object": "access_logs",
+    	"where":{ 
+    		"access_logs":{
+    			"time":{
+    				">=":1716865200
+    			},
+    			"time":{
+    				"<=":1717037940
+    			},
+    			"user_id":2601722
+    		}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cf95904fc366408ab6f080188a6902e9
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+    id: pair_25c1807cddaf4f528cc53c0499077a46
+authentication: {}
+metaSortKey: -1692893816025.1602
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

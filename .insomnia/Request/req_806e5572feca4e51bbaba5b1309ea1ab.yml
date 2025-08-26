@@ -1,0 +1,23 @@
+_id: req_806e5572feca4e51bbaba5b1309ea1ab
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756227480134
+created: 1756227463397
+url: ""
+name: Push Server
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1756227463397
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

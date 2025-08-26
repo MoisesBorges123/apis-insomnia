@@ -1,0 +1,30 @@
+_id: req_73eca64fb9ff4381b5aac9fa70093ad6
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230527533
+created: 1694021186231
+url: "{{ _.ip }}/reset_to_factory_default.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Redefinir configurações de fabrica do Equipamento
+description: 'Esta ação recebe um parâmetro (allow="direction"), onde
+  "direction" deve ser "anticlockwise", "clockwise" ou "both". '
+method: POST
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692842955387.336
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

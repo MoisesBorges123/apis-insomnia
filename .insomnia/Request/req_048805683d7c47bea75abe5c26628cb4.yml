@@ -1,0 +1,55 @@
+_id: req_048805683d7c47bea75abe5c26628cb4
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230972419
+created: 1694021186226
+url: "{{ _.ip }}/modify_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Update TimeSpan
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    
+
+    { 
+    	"object": "time_spans", 
+    	
+    	"values": {
+    		"start":0,
+    		"end":86399,
+    		"sun":1,
+    		"mon":0,
+    		"tue":0,
+    		"wed":1,
+    		"thu":0,
+    		"fri":1,
+    		"sat":1,
+    		"hol1":1,
+    		"hol2":1,
+    		"hol3":0
+    	},
+    	
+    	"where" : { 
+    			"time_spans":{
+    				"id":1
+    			}
+    	} 
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692892274793.711
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

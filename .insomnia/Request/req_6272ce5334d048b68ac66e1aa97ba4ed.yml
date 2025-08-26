@@ -1,0 +1,59 @@
+_id: req_6272ce5334d048b68ac66e1aa97ba4ed
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236157535
+created: 1694021186215
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Users
+description: |-
+  Formas de Get em objetos
+
+  Com filtros
+
+  {
+  	"object":"users",
+  	"where":{
+  		"users":{"id":2}
+  	}
+  }
+
+  Sem filtros
+
+  {
+  	"object":"users",	
+  }
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    
+    {
+
+                        "object":"c_users",
+
+                       
+
+                        "order":["user_id"]
+
+
+                    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d75420edf8e84f7982cbc1f0d86ef673
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+    id: pair_4e595cf6e43d46cfb5bad39cdb74bcad
+    disabled: true
+authentication: {}
+metaSortKey: -1692907687108.2031
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

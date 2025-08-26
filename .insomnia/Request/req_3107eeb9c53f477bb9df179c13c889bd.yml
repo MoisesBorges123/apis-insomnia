@@ -1,0 +1,36 @@
+_id: req_3107eeb9c53f477bb9df179c13c889bd
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236253880
+created: 1724698807752
+url: "{{ _.ip }}/export_audit_logs.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Log Auditoria
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"initial_date":{
+              "day":26,
+              "month":8,
+              "year":2024
+            }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692909998955.377
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

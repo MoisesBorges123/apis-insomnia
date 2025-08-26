@@ -1,0 +1,37 @@
+_id: req_c41b5d9b83c84ee88314dc9410757d9a
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756238317799
+created: 1697043863884
+url: "{{ _.ip }}/set_configuration.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Set Modo Ponto
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+                "general": {
+                    "attendance_mode": "1"
+                },
+                "identifier" : {
+                    "log_type": "0"
+                }
+            }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692914724914
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

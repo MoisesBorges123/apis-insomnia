@@ -1,0 +1,45 @@
+_id: req_ee92d35ee7e64da6b2e255976a42d9b5
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756235162525
+created: 1694732558693
+url: "{{ _.ip }}/user_list_images.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get list user image
+description: |-
+  Formas de Get em objetos
+
+  Com filtros
+
+  {
+  	"object":"users",
+  	"where":{
+  		"users":{"id":2}
+  	}
+  }
+
+  Sem filtros
+
+  {
+  	"object":"users",	
+  }
+method: POST
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692907614862.979
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

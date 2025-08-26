@@ -1,0 +1,36 @@
+_id: req_193737a55c794cbca44e024d47a12fb2
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756237945221
+created: 1700504505704
+url: "{{ _.ip }}/modify_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Update Portals_Actions
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"portal_actions",
+    	"values":{"portal_id":18},
+    	"where":{
+    		"portal_actions":{"portal_id":1}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692912702130.8484
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

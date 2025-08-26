@@ -1,0 +1,44 @@
+_id: req_5bfd31aa9ba74df5b51e25a55375fce4
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756238299547
+created: 1694021186200
+url: "{{ _.ip }}/set_configuration.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Set Configurações
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |+
+    {
+                    
+    	"monitor": {
+    		"path": "api/notification",
+    		"hostname": "https://sagau.alfaunipac.com.br:665/",
+    		"port": "",
+    		"request_timeout": "5000"
+    	},
+    	"push_server": {
+    		"push_request_timeout": "15000",
+    		"push_request_period": "60",
+    		"push_remote_address": "https://sagau.alfaunipac.com.br:665/"
+    	}
+     }
+
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692914724901.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

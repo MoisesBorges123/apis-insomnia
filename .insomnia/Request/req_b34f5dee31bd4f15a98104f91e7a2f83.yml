@@ -1,0 +1,107 @@
+_id: req_b34f5dee31bd4f15a98104f91e7a2f83
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756238263586
+created: 1694021186188
+url: "{{ _.ip }}/get_configuration.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Configurações
+description: >-
+  #ATIVAÇÃO DOS LEDS
+
+
+  Os valores de entrada possíveis e as respectivas condições são: "40" (baixa luminosidade, definido por padrão), "280" (média luminosidade), "1500" (alta luminosidade) e "3000" (acesos em qualquer ambiente).
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"general":[
+    		"online",
+    		"auto_reboot_hour",
+    		"auto_reboot_minute",
+    		"clear_expired_users",
+    		"url_reboot_enabled",
+    		"keep_user_image",
+    		"beep_enabled",
+    		"ssh_enabled",				
+    		"bell_enabled",
+    		"bell_relay",		
+    		"local_identification",
+    		"exception_mode",		
+    		"language",
+    		"daylight_savings_time_start",
+    		"daylight_savings_time_end",
+    		"password_only",
+    		"hide_password_only",
+    		"password_only_tip",
+    		"hide_name_on_identification",
+    		"url_reboot_enabled",
+    		"usb_port_enabled",
+    		"attendance_mode"
+    	],	
+    	"face_id":[
+    		"mask_detection_enabled",
+    		"vehicle_mode",
+    		"max_identified_duration",
+    		"limit_identification_to_display_region",
+    		"liveness_mode",
+        "qrcode_legacy_mode_enabled"
+    	],
+    	"face_module":[
+    		"light_threshold_led_activation"	
+    	],
+    	"camera_overlay":[
+    		"zoom",
+    		"vertical_crop"
+    	],
+    	"monitor": [
+    		"path",
+    		"hostname",
+    		"port",
+    		"request_timeout"
+    	],
+    	"push_server": [
+    		"push_request_timeout",
+    		"push_request_period",
+    		"push_remote_address"
+    	],	
+    	"online_client": [
+    		"server_id", 
+    		"extract_template",
+    		"max_request_attempts",
+    		"contingency_enabled",
+    		"request_timeout",
+    		"alive_interval"
+    	],
+    	"identifier": [
+    		"verbose_logging",
+    		"log_type",
+    		"multi_factor_authentication",
+    		"face_identification_enabled",
+    		"qrcode_identification_enabled",
+    		"attendance_id_timeout"
+    	],
+    	"mifare": ["byte_order"],
+    	"alarm": [
+    		"siren_enabled"
+    	],
+    	"rs485":["enabled"]
+    	
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692914724889
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

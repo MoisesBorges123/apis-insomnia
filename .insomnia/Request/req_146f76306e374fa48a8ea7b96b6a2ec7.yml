@@ -1,0 +1,45 @@
+_id: req_146f76306e374fa48a8ea7b96b6a2ec7
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236313077
+created: 1699388725774
+url: "{{ _.ip }}/create_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: set secboxes
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"sec_boxs",	
+    	"values":[
+    		{
+    			"id":6,
+    			"version":131330,
+    			"name":"SecBox - Close",
+    			"enabled":0,
+    			"relay_timeout":0,
+    			"door_sensor_enabled":0,
+    			"door_sensor_idle":0,
+    			"auto_close_enabled":0
+    			
+    		}
+    		]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692912696110.413
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,37 @@
+_id: req_b60fb64b6ec34ee889c679a2717dafc1
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230592063
+created: 1694021186196
+url: "{{ _.ip }}/execute_actions.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Liberar Catraca Horário
+description: 'Esta ação recebe um parâmetro (allow="direction"), onde
+  "direction" deve ser "anticlockwise", "clockwise" ou "both". '
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"actions":[{
+    		"action":"catra",
+    		"parameters":"allow=clockwise"	
+    	}]
+    	
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692852202776.0312
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

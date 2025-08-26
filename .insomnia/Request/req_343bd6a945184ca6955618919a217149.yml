@@ -1,0 +1,34 @@
+_id: req_343bd6a945184ca6955618919a217149
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230998572
+created: 1716404903804
+url: "{{ _.ip }}/get_ac_log.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Logs de Sistema
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"access_logs"	
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cf95904fc366408ab6f080188a6902e9
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+    id: pair_25c1807cddaf4f528cc53c0499077a46
+authentication: {}
+metaSortKey: -1692893430717.2979
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

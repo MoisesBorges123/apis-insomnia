@@ -1,0 +1,36 @@
+_id: req_95bd7134e3f24735ac7247b0990450cb
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756230650436
+created: 1694021186193
+url: "{{ _.ip }}/execute_actions.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Abrir Coletora
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"actions":[{
+    		"action":"sec_box",
+    		"parameters":"id=65793, reason=3, timeout=3000"	
+    	}]
+    	
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692864532627.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

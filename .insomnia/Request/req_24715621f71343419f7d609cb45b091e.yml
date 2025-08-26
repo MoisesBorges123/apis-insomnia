@@ -1,0 +1,33 @@
+_id: req_24715621f71343419f7d609cb45b091e
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756238373278
+created: 1694021186208
+url: "{{ _.ip }}/buzzer_buzz.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Ativa Buzz
+description: >-
+  #ATIVAÇÃO DOS LEDS
+
+
+  Os valores de entrada possíveis e as respectivas condições são: "40" (baixa luminosidade, definido por padrão), "280" (média luminosidade), "1500" (alta luminosidade) e "3000" (acesos em qualquer ambiente).
+method: POST
+body:
+  mimeType: application/json
+  text: '{ "frequency": 4000, "duty_cycle":50, "timeout": 1000 }'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692914724989
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

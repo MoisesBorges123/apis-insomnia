@@ -1,0 +1,32 @@
+_id: req_c712fee6db7845678e65323521cd2285
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756236293299
+created: 1695054172239
+url: "{{ _.ip }}/device_is_alive.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Device Alive
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"access_logs":40
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication: {}
+metaSortKey: -1692912310802.5508
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

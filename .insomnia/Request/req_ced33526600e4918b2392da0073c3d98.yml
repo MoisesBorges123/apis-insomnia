@@ -1,0 +1,40 @@
+_id: req_ced33526600e4918b2392da0073c3d98
+type: Request
+parentId: fld_a934b6ecb6184c60b259889afbe4befd
+modified: 1756238598248
+created: 1744652663361
+url: "{{ _.server_test }}/api/notifications/catra_event"
+name: Monitor Giro
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "event": {
+        "type": 7,
+        "name": "TURN LEFT",
+        "time": 1484126902,
+        "uuid": "0e039178"
+      },
+      "access_event_id": 15,
+      "device_id": 935107,
+      "time": 1484126902
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_31f09b9e60514ec980e3476c5cd68477
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_fc46ac0f04f84a8cb854f1675934e815
+authentication: {}
+metaSortKey: -1756228333534
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,31 @@
+_id: req_d890c29d125347109df5b95d02fe4fad
+type: Request
+parentId: fld_a934b6ecb6184c60b259889afbe4befd
+modified: 1756228333368
+created: 1699386030077
+url: https://sagau.alfaunipac.com.br:665/api/device_is_alive.fcgi
+name: Device is ALive
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1756228333334
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

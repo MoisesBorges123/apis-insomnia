@@ -1,0 +1,31 @@
+_id: req_08f543c46f4647e4806d6c9a488871ba
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756233974662
+created: 1694021186219
+url: "{{ _.ip }}/load_objects.fcgi?session={% response 'body',
+  'req_8df8cae435e44fd1a573507e7caf0d17', 'b64::JC5zZXNzaW9u::46b', 'never', 60
+  %}"
+name: Get Access_Rules
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"object":"access_rules"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_aed2a0f6f17745958fd23ccade9d5a9a
+authentication: {}
+metaSortKey: -1692906145876.754
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,39 @@
+_id: req_c585cb4e18c24cc6a935a4d02c0e353a
+type: Request
+parentId: fld_a934b6ecb6184c60b259889afbe4befd
+modified: 1756238604906
+created: 1745343576632
+url: "{{ _.server_test }}/api/notifications/operation_mode"
+name: Monitor Modo Operação
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "operation_mode": {
+        "mode": 0,
+        "mode_name": "DEFAULT",
+        "time": 1490271121,
+        "last_offline": 1490261121,
+        "exception_mode": "none"
+      },
+      "device_id": 123456
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_31f09b9e60514ec980e3476c5cd68477
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_fc46ac0f04f84a8cb854f1675934e815
+authentication: {}
+metaSortKey: -1756228333634
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,37 @@
+_id: req_8df8cae435e44fd1a573507e7caf0d17
+type: Request
+parentId: fld_4f11f966063f4d95a45bb3c9721d1885
+modified: 1756227562879
+created: 1694021186175
+url: "{{ _.ip }}/login.fcgi"
+name: Gerar sessão
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+       "login":"admin",
+       "password":"prof3ss1onal"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - id: pair_c9918f92b9d74834a7623e46da4646f6
+    name: ""
+    value: ""
+    description: ""
+  - id: pair_3ec824e4a2e94d469f9f78c727e4eeca
+    name: ""
+    value: ""
+    description: ""
+authentication: {}
+metaSortKey: -1691862810106
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
